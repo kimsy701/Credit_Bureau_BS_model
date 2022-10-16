@@ -30,11 +30,11 @@
 ### 2.3 모형 개발
 #### 2.3.1 요약항목 선정
 #### ??????????????????.ipynb
-- Fineclassing
-- Coarse Classing
-- Stepwise Selection(logistic regression 사용)
-- 평점표 생성
-- 등급화
+- Fineclassing(1차 변수 선택) : 수치형 데이터를 각 구간이 5% 비중을 갖게 구간화하는 방법. 구간화를 하여 각 변수 별로 KS 및 PSI 값을 도출할 수 있으므로 KS와 PSI가 특정 기준(ex. 0.1)보다 각각 높거나 낮은 변수만 선택할 수 있음
+- Coarse Classing(2차 변수 선택) : Fineclassing을 완료한 데이터를 3그룹(경우에 따라 2그룹 또는 4그룹)으로 그룹화하는 방법. 각 그룹별로 불량률 차이가 많이 나도록 그룹화된다면 해당 변수를 선택할 확률이 커짐
+- Stepwise Selection(logistic regression 사용) : stepwise selection 방식으로 수행한 logistic regression으로 가모형을 구축한 후, 각 변수에 대한 p-value를 기준으로 p-value가 너무 높은 변수는 제외할 수 있음
+- 평점표 생성 : Coarse Classing의 그룹화 정보를 불러와, 한 변수의 각 그룹별 logistic regression의 배점(=기여도), 해당 변수의 총 배점(=기여도)을 구할 수 있음 
+- 등급화: Logistic regression의 target 변수값를 구간화하여 총 10등급(경우에 따라 15등급까지 분류가능)으로 나눔. 상위 등급(1,2,3등급)일 수록 target 변수 값이 높아져야하며, 각 등급별 불량률이 역전이 나지 않아야 함. 
 #### 2.3.2 전략 수립(한도 전략, 승인 전략)
 - 결합등급 생성
 - Cut-off 전략 수립
