@@ -16,6 +16,6 @@
 - Stepwise Selection(logistic regression 사용)
 - 평점표 생성
 - 등급화
-####2.3.2 전략 수립(한도 전략, 승인 전략)
+#### 2.3.2 전략 수립(한도 전략, 승인 전략)
 - 결합등급 생성
 - Cut-off 전략 수립
