@@ -39,4 +39,4 @@
 - 결합등급 생성
 - Cut-off 전략 수립
 
-#3. Data description
+# 3. Data description
