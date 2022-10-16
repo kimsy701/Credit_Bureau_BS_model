@@ -1,4 +1,5 @@
 # Credit_Bureau_BS_model
+참고가능한 파이썬 코드: https://towardsdatascience.com/how-to-develop-a-credit-risk-model-and-scorecard-91335fc01f03
 
 ## 1. What is BSS(Behavior Scoring System) model?
 ### - 계약이 체결된 고객의 정보(속성, 신용거래, 기타 금융정보 등)를 종합하여 기존 고객의 신용도 변화를 점검하여 고객의 부실 가능성을 예측, 조기경보하는 시스템
